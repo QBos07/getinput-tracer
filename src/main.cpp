@@ -68,7 +68,7 @@ static bool do_log(int &ret, Input_Event *arg1, std::uint32_t arg2, std::uint32_
         buffer + length, sizeof(buffer) - length,
         "] arg2 - %3" PRIi32 " arg3 - %3" PRIi32 " = %3i\n",
         static_cast<std::make_signed_t<decltype(arg2)>>(arg2),
-        static_cast<std::make_signed_t<decltype(arg2)>>(arg2), ret);
+        static_cast<std::make_signed_t<decltype(arg3)>>(arg3), ret);
     length += l;
   }
   length = length < sizeof(buffer) ? length : sizeof(buffer);
